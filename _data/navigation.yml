@@ -1,0 +1,11 @@
+main:
+  - title: "About"
+    url: /
+  - title: "Research"
+    url: /research/
+  - title: "R&D Experience"
+    url: /industry/
+  - title: "Publications"
+    url: /publications/
+  - title: "CV"
+    url: /cv/
