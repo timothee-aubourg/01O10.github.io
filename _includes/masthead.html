@@ -4,7 +4,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="{{ base_path }}/">{{ site.title }}</a>
-        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
         </button>
         <ul class="visible-links desktop-nav">
@@ -38,7 +38,7 @@
 </div>
 
 <script>
-  document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+  document.getElementById('mobile-nav-toggle').addEventListener('click', function() {
     var mobileNav = document.querySelector('.mobile-nav');
     mobileNav.classList.toggle('hidden');
     this.classList.toggle('open');
