@@ -408,13 +408,20 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   display: block;
 }
 
+#mobile-nav-toggle.hidden {
+  display: block !important;
+  visibility: visible !important;
+}
+
 @media (max-width: 925px) {
   .desktop-nav {
     display: none !important;
   }
 
   .mobile-nav-toggle {
-    display: block;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
   .masthead {
