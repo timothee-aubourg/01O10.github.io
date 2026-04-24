@@ -408,7 +408,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 925px) {
   .desktop-nav {
     display: none !important;
   }
@@ -422,7 +422,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 926px) {
   .mobile-nav {
     display: none !important;
   }
