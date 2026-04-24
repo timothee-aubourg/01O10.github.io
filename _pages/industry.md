@@ -5,7 +5,7 @@ permalink: /industry/
 author_profile: true
 ---
 
-After my postdoc in 2021, I made the decision to move into industry for a few years, partly for personal and family reasons that required more stability at the time. As I describe in my [research background](/about/), this period shaped how I think about innovation, validation and engineering discipline: getting solutions from paper to practice.
+After my postdoc in 2021, I moved into industry for a few years, driven by caring responsibilities that required more stability at the time.
 
 ---
 
