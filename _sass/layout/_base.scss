@@ -351,58 +351,85 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
 }
 
 /* Mobile masthead fixes */
+.site-title {
+  font-weight: 700;
+  font-size: 1em;
+  text-decoration: none;
+  color: var(--global-text-color);
+  float: left;
+  padding: 0.5em 0;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  float: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.6em 0.4em;
+  margin-top: 0.2em;
+}
+
+.mobile-nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--global-text-color);
+  margin: 5px 0;
+  transition: all 0.2s;
+}
+
+.mobile-nav {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.mobile-nav li {
+  display: block;
+}
+
+.mobile-nav li a {
+  display: block;
+  padding: 0.6em 0;
+  text-decoration: none;
+  color: var(--global-text-color);
+  font-size: 0.9em;
+}
+
+.mobile-nav li.selected a {
+  font-weight: 700;
+}
+
+.mobile-nav:not(.hidden) {
+  display: block;
+}
+
 @media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
   .masthead {
-    position: relative;
+    position: relative !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none !important;
   }
 
-  .masthead__inner-wrap {
-    padding: 0.4em 0.8em;
+  .mobile-nav-toggle {
+    display: none !important;
   }
-
-  .greedy-nav .visible-links {
-    display: none;
-  }
-
-  .greedy-nav.nav--active .visible-links {
-    display: block;
-    background: var(--global-bg-color);
-    width: 100%;
-    padding: 0.5em 0;
-  }
-
-  .greedy-nav .visible-links li {
-    display: block;
-    padding: 0.4em 1em;
-  }
-
-  .greedy-nav button {
-    display: block !important;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5em;
-    float: right;
-  }
-
-  .navicon,
-  .navicon::before,
-  .navicon::after {
-    background: var(--global-text-color);
-    display: block;
-    height: 2px;
-    width: 1.5em;
-    position: relative;
-  }
-
-  .navicon::before,
-  .navicon::after {
-    content: '';
-    position: absolute;
-  }
-
-  .navicon::before { top: -6px; }
-  .navicon::after  { top: 6px; }
 }
 
 /* ==========================================================================

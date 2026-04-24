@@ -3,11 +3,11 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><span class="navicon"></span></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
-          </li>
+        <a class="site-title" href="{{ base_path }}/">{{ site.title }}</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="visible-links desktop-nav">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -18,10 +18,29 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-
+        </ul>
+        <ul class="mobile-nav hidden">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li class="{% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
 </div>
+
+<script>
+  document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+    var mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.classList.toggle('hidden');
+    this.classList.toggle('open');
+  });
+</script>
