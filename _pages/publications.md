@@ -7,6 +7,8 @@ author_profile: true
 
 [Google Scholar](https://scholar.google.com/citations?user=y9gR9AYAAAAJ) &nbsp;|&nbsp; [ORCID 0000-0002-0151-6397](https://orcid.org/0000-0002-0151-6397)
 
+*Metrics auto-updated weekly from Google Scholar. Last updated: {{ site.data.scholar_stats.last_updated }}.*
+
 <table style="width:auto; border-collapse: collapse; font-size: 0.95em; margin: 1em 0;">
   <tr>
     <td style="padding: 8px 24px 8px 0; text-align: center; vertical-align: top;">
@@ -30,7 +32,9 @@ author_profile: true
 
 ---
 
-## 2026
+## Highlighted Publications
+
+This is a curated selection of key papers. The full list is available on [Google Scholar](https://scholar.google.com/citations?user=y9gR9AYAAAAJ) and [ORCID](https://orcid.org/0000-0002-0151-6397).
 
 **Aubourg, T.** et al. Identifying and predicting fast vs slow motor progressors in Parkinson's disease using clinical and digital data. *BMJ Neurology Open* (2026). *(under review)*
 
