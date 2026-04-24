@@ -1,1 +1,3 @@
-// Theme toggle disabled — light mode only
+// Theme exports required by main.min.js
+export const plotlyDarkLayout = {};
+export const plotlyLightLayout = {};
